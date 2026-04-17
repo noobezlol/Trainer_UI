@@ -43,7 +43,7 @@ COPY configs/ ./configs/
 RUN mkdir -p outputs
 
 # 5. COPY BINARY
-COPY --from=builder /build/launcher/target/release/launcher ./UnslothStudio
+COPY --from=builder /build/launcher/target/release/launcher ./TrainerUI
 
 # 6. CONFIG
 RUN echo '{"python_path": "/usr/bin/python3"}' > settings.json
@@ -70,7 +70,7 @@ if ! timeout 1s xset q >/dev/null 2>&1; then\n\
 fi\n\
 \n\
 # If check passes, launch the app\n\
-exec ./UnslothStudio\n\
+exec ./TrainerUI\n\
 ' > /app/entrypoint.sh && chmod +x /app/entrypoint.sh
 
 # 8. RUN

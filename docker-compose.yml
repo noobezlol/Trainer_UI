@@ -2,7 +2,7 @@ services:
   unsloth-studio:
     build: .
     image: unsloth-studio:latest
-    container_name: unsloth_studio
+    container_name: Trainer_UI
     
     # 1. Hardware Access
     deploy:
@@ -36,4 +36,4 @@ services:
 
     # 4. OVERRIDE THE CHECK SCRIPT
     # This skips the "Red Box" error and launches the app directly
-    entrypoint: ["/app/UnslothStudio"]
+    entrypoint: ["/app/TrainerUI"]

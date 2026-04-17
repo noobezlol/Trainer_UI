@@ -1,4 +1,4 @@
-# Unsloth Studio
+# Trainer UI
 
 **Fine-Tune LLMs with a Beautiful, Native Desktop Interface**
 
@@ -6,14 +6,14 @@
 
 ---
 
-![Unsloth Studio Interface](img.png)
+![Trainer UI Interface](img.png)
 
 ---
 
 ## Quick Start
 
 1. **Install Unsloth** — See the [Installation](#installation) section
-2. **Download Unsloth Studio** via Docker (recommended) or binary
+2. **Download Trainer UI** via Docker (recommended) or binary
 3. **Launch the application** and point it to your Python environment
 4. **Load a dataset** using the built-in converter
 5. **Configure training** and hit **Start Training**
@@ -35,7 +35,7 @@
 
 ## Overview
 
-**Unsloth Studio** is a powerful, standalone desktop application that wraps the industry-leading [Unsloth](https://github.com/unslothai/unsloth) library in a high-performance Rust GUI.
+**Trainer UI** is a powerful, standalone desktop application that wraps the industry-leading [Unsloth](https://github.com/unslothai/unsloth) library in a high-performance Rust GUI.
 
 With an intuitive interface, you can:
 
@@ -92,7 +92,7 @@ pip install --no-deps "xformers<0.0.26" "trl<0.9.0" peft accelerate bitsandbytes
 
 ---
 
-### Download Unsloth Studio
+### Download Trainer UI
 
 #### Option A: Docker (Recommended)
 
@@ -107,7 +107,7 @@ Run the entire application in a container with GPU support and all dependencies 
 
 ```bash
 # Clone the repo
-git clone https://github.com/noobezlol/Unsloth_Studio.git
+git clone https://github.com/noobezlol/Trainer_UI.git
 cd Unsloth-Studio
 
 # On Linux, allow GUI access first:
@@ -128,7 +128,7 @@ docker compose up --build
 
 #### Option B: Binary Release
 
-Download the latest release from the [Releases page](https://github.com/noobezlol/Unsloth_Studio/releases), unzip it, and run the executable.
+Download the latest release from the [Releases page](https://github.com/noobezlol/Trainer_UI/releases), unzip it, and run the executable.
 
 ---
 
@@ -136,7 +136,7 @@ Download the latest release from the [Releases page](https://github.com/noobezlo
 
 ```bash
 # Clone the repo
-git clone https://github.com/noobezlol/Unsloth_Studio.git
+git clone https://github.com/noobezlol/Trainer_UI.git
 cd Unsloth-Studio
 
 # Build the Rust UI
@@ -232,7 +232,7 @@ When GRPO is selected, you can enable specific reward functions:
 
 ## Performance: Zero Overhead
 
-Unsloth Studio introduces **zero performance loss** compared to running scripts manually.
+Trainer UI introduces **zero performance loss** compared to running scripts manually.
 
 1. The Rust UI generates a strict JSON config
 2. It spawns the Python engine as a subprocess

@@ -386,7 +386,7 @@ impl eframe::App for App {
             egui::CentralPanel::default().show(ctx, |ui| {
                 ui.vertical_centered(|ui| {
                     ui.add_space(150.0);
-                    ui.heading(egui::RichText::new("Unsloth Studio Setup").size(42.0).strong().color(palette.accent));
+                    ui.heading(egui::RichText::new("Trainer UI Setup").size(42.0).strong().color(palette.accent));
                     ui.add_space(10.0);
                     ui.label(egui::RichText::new("Welcome! Please configure your Python environment to begin.").size(18.0).color(palette.text_secondary));
                     ui.add_space(40.0);
@@ -431,7 +431,7 @@ impl eframe::App for App {
             ui.horizontal(|ui| {
                 ui.add_space(24.0);
                 ui.vertical_centered(|ui| {
-                    ui.heading(egui::RichText::new("Unsloth Studio").size(22.0).strong().color(palette.accent));
+                    ui.heading(egui::RichText::new("Trainer UI").size(22.0).strong().color(palette.accent));
                 });
                 ui.with_layout(egui::Layout::right_to_left(egui::Align::Center), |ui| {
                     ui.add_space(16.0);
@@ -791,7 +791,7 @@ impl App {
                     ui.add_space(14.0);
                     ui.heading(egui::RichText::new("About").size(15.0).strong().color(palette.accent));
                     ui.add_space(12.0);
-                    ui.label(egui::RichText::new("Unsloth Studio").size(16.0).strong());
+                    ui.label(egui::RichText::new("Trainer UI").size(16.0).strong());
                     ui.label(egui::RichText::new("Version 1.0").size(12.0).color(palette.text_secondary));
                     ui.add_space(8.0);
                     ui.label(egui::RichText::new("AI Training Launcher powered by Unsloth").size(12.0).color(palette.text_muted));
@@ -804,8 +804,8 @@ impl App {
 
 fn main() -> eframe::Result<()> {
     let options = eframe::NativeOptions {
-        viewport: egui::ViewportBuilder::default().with_inner_size([1400.0, 900.0]).with_min_inner_size([1100.0, 700.0]).with_title("Unsloth Studio Pro"),
+        viewport: egui::ViewportBuilder::default().with_inner_size([1400.0, 900.0]).with_min_inner_size([1100.0, 700.0]).with_title("Trainer UI Pro"),
         ..Default::default()
     };
-    eframe::run_native("Unsloth Studio Pro", options, Box::new(|cc| { cc.egui_ctx.set_visuals(egui::Visuals::dark()); Ok(Box::new(App::default())) }))
+    eframe::run_native("Trainer UI Pro", options, Box::new(|cc| { cc.egui_ctx.set_visuals(egui::Visuals::dark()); Ok(Box::new(App::default())) }))
 }
