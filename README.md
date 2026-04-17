@@ -108,7 +108,7 @@ Run the entire application in a container with GPU support and all dependencies 
 ```bash
 # Clone the repo
 git clone https://github.com/noobezlol/Trainer_UI.git
-cd Unsloth-Studio
+cd Trainer_UI
 
 # On Linux, allow GUI access first:
 xhost +local:root
@@ -137,7 +137,7 @@ Download the latest release from the [Releases page](https://github.com/noobezlo
 ```bash
 # Clone the repo
 git clone https://github.com/noobezlol/Trainer_UI.git
-cd Unsloth-Studio
+cd Trainer_UI
 
 # Build the Rust UI
 cd launcher
@@ -246,7 +246,7 @@ Trainer UI introduces **zero performance loss** compared to running scripts manu
 ## Project Structure
 
 ```
-Unsloth-Studio/
+Trainer_UI/
 ├── launcher/                  # The Rust GUI Application
 │   └── src/main.rs            #    Main Interface Logic
 ├── engine/                    # The Python Engine
